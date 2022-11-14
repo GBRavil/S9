@@ -1,8 +1,8 @@
 ﻿// Написать программу вычисления функции Аккермана
-Console.WriteLine($"Задайте (M)");
-int m = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine($"Задайте (N)");
 int n = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine($"Задайте (M)");
+int m = Convert.ToInt32(Console.ReadLine());
 int Akk(int n, int m)
 {
     if (n == 0)
@@ -12,4 +12,4 @@ int Akk(int n, int m)
     else
         return Akk(n - 1, Akk(n, m - 1));
 }
-Console.WriteLine($"Функция Аккермана = {Akk(m,n)}");
+Console.WriteLine($"Функция Аккермана = {Akk(n,m)}");
